@@ -1,0 +1,40 @@
+// Check if the user is ready to play!
+
+var start = prompt ("Are your ready to play?");
+
+if (start === "Yes") {
+confirm ("I understand!");
+}
+else {
+    console.log("Aww, too bad");
+};
+
+var age = prompt ("What's your age?")
+
+if (age < 13) {
+    console.log("You must be at least 13 to play");
+}
+else {
+    console.log("You are at a Justin Bieber concert, and you hear this lyric 'Lace my shoes off, start racing.'");
+        //"You are a republic spy on an Imperial Star Desryoer. You have been sent to steal the plans to the Death Star!");
+};
+    
+console.log("Suddenly, Bieber stops and says, 'Who wants to race me?'");
+var userAnswer = prompt("Do you want to race Bieber on stage?");
+if (userAnswer === "Yes") {
+    console.log("You and Bieber start racing. It's neck and neck! You win by a shoelace!");
+}
+else {
+    console.log("Oh no! Bieber shakes his head and sings 'I set a pace, so I can race without pacing.'");
+};
+
+var feedback = prompt ("Please Rate the Game");
+if (feedback > 8) {
+    console.log("Thank you! We should race at the next concert!")
+}
+else {
+    console.log("I'll keep practicing coding and racing.")
+};
+
+
+    

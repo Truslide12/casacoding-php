@@ -1,0 +1,21 @@
+/*jshint multistr:true */
+
+var text = "I want to run through the forest with Carlos. With the sun shining and a slight breeze to keep me cool. Carlos and I will laugh and smile as we enjoy the beautiful weather. Carlos always makes me smile.";
+
+var myName = "Carlos";
+
+var hits = [];
+
+for (i=0; i<text.length; i++) {
+    if (text[i] === "C") {
+        for (var j=i; j<(myName.length+i); j++) {
+        hits.push(text[j]);
+    }
+}
+}
+
+if (hits.length === 0) {
+    console.log("Your name wasn't found!");
+} else {
+    console.log(hits);
+};

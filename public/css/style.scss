@@ -1,0 +1,353 @@
+body {
+    color: #fff;
+    background-image: linear-gradient(to bottom right
+    ,#000000, #838384)
+}
+
+.head {
+    padding-top: 30px;
+    margin: 0 40px 0 0;
+    float:left;
+}
+
+a {
+    color: #ffc205;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a.subNav {
+    color:#3b05ff;
+}
+.aboutInfo {
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.contentL {
+    width: 50%;
+    float: left;
+    padding: 10px;  
+    margin: 0;
+}
+
+.contentR {
+    width: 50%;
+    float: right;
+    padding: 10px;  
+    margin: 0;
+}
+
+.aboutImg {
+    width: 48%;
+}
+
+embed {
+    width: 75%;
+    height: 700%;
+}
+
+.row {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.profileImg {
+    width: 70%;
+    height: auto;
+}
+
+.profileHead {
+    float: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 24px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+.menu {
+    border: 1px solid #FFF;
+    float: right;
+    margin: 30px 0 30px 0;
+}
+
+.menu ul.nav li {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    color: rgba(42, 21, 232);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu ul.nav li:hover {
+    color: #fff;
+    background: rgba(42, 21, 232);
+}
+
+.main {
+    content: " ";
+    display: block;
+    clear: both;  
+    border-top: solid whitesmoke 5px;
+    border-bottom: solid whitesmoke 5px;
+    margin-top: 20px;
+}
+
+.main ul {
+    border: 1px solid #FFF;
+    background-color: #000;
+}
+
+#mission {
+    text-align: center;
+    align-content: center;
+    padding: 50px;
+}
+
+img {
+    width: 900px;
+}
+
+.weblink {
+    margin: 10px;
+    padding: 10px;
+    width: 40%;
+    border: solid blanchedalmond 5px;
+}
+
+tr {
+    align-content:center;
+    padding: 20px;
+}
+
+td {
+    padding: 20px; 
+    align-content:center;
+    text-align: center
+ }
+
+ .tableImg {
+     width: 70%;
+ }
+
+.pmList {
+    border: solid blanchedalmond 5px;
+    padding: 10px;
+    float: left;
+}
+
+.pair {
+    float: left;
+    margin: 20px;
+    padding: 10px;
+}
+
+.footer {
+    content: " ";
+    display: block;
+    clear: both; 
+    background-color: #000000;
+    align-content: center;
+    text-align: center;
+}
+
+.footer-img {
+    width: 5%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-item:hover>.dropdown-menu {
+display: block;
+}
+
+ul li{
+list-style-type:none;
+display: inline;
+}
+
+.title {
+ margin: 20px 0 0 0;
+}
+
+.description {
+    margin: 10px 0 0 0;
+}
+  
+.navbar-nav .nav-link{display:inline-block;}
+     
+.ml-auto {display:inline-block!important;}
+  
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}
+
+.aboutH {
+    font-size: 26px;  
+}
+
+.aboutC {
+    font-size: 18px;  
+}
+
+#showcase-box {
+    /* width: 80%; */
+    align-content: center;
+}
+.showcase {
+    align-content: center;
+    text-align: center;
+    font-size: 24px;
+    padding: 24px;
+}
+
+.underConstruction {
+    align-content: center;
+    width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .slider {
+        width: 91%;
+    }
+
+    .jumbotron h1 {
+        font-size: 60px;
+    }
+
+    .jumbotron p {
+        color: white;
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .slider {
+        width: 91%;
+    }
+
+    .jumbotron h1 {
+        font-size: 60px;
+    }
+
+    .jumbotron p {
+        color: white;
+        font-size: 40px;
+    }
+
+    img {
+        max-width: 100px;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
+
+// @include media-breakpoint-up(xs) { ... }
+// @include media-breakpoint-up(sm) { ... }
+// @include media-breakpoint-up(md) { ... }
+// @include media-breakpoint-up(lg) { ... }
+// @include media-breakpoint-up(xl) { ... }
+
+// Example usage:
+@include media-breakpoint-up(sm) {
+  .some-class {
+    display: block;
+  }
+}
+
+$grid-columns:      12;
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 576px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+
+.example-container {
+    width: 800px;
+    @include make-container();
+  }
+  
+  .example-row {
+    @include make-row();
+  }
+  
+  .example-content-main {
+    @include make-col-ready();
+  
+    @include media-breakpoint-up(sm) {
+      @include make-col(6);
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col(8);
+    }
+  }
+  
+  .example-content-secondary {
+    @include make-col-ready();
+  
+    @include media-breakpoint-up(sm) {
+      @include make-col(6);
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col(4);
+    }
+  }

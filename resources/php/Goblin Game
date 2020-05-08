@@ -1,0 +1,52 @@
+var user = prompt("You're walking through the forest and a Goblin Jumps in front of you and demands you pay a toll... Do you fight, pay or run?").toUpperCase();
+
+switch (user) {
+    case 'FIGHT':
+        var strong = prompt("Are you strong?").toUpperCase();
+        switch (strong) {
+            case 'YES':
+                strong === "YES";
+            break;
+            case 'Y':
+                strong === "YES";
+            break;
+            case 'NO':
+                strong === "NO";
+            break;
+            case 'N':
+                strong === "NO";
+            default:
+                strong = prompt("Are you strong? Please enter yes or no.")
+        }
+            
+        var smart = prompt("Are you intelligent?").toUpperCase();
+        if ( strong || smart === "YES") {
+        console.log("You only need one to best the Goblin!!!!");
+        }
+    break;
+    case 'PAY':
+        var money = prompt("How much money do you have?");
+        while (isNaN(money)) {
+            money = prompt ("Please enter a number.");
+        }
+        var goblinCash = prompt ("Is it Goblin Money?").toUpperCase();
+        if (goblinCash === "YES" && money >= 100) {
+            console.log("You Paid the man!!! Now that's a happy Goblin and you proceed unharmed!!!");
+        }
+        else {
+            console.log("You need at least 100 Goblin coins!");
+        }
+        break;
+    case 'RUN':
+        var speed = Math.random()*100;
+        console.log(speed);
+        if (speed >= 75) {
+            console.log("You're quick!! The Goblin only sees a blur of speed!");
+        }
+        else {
+            console.log("You weren't fast enough!")
+        }
+        break;
+    default:
+        console.log("You get a phat beatdown from the Goblin!");
+}
