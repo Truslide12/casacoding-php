@@ -9,25 +9,25 @@
     </div>
 
     @foreach($projects->chunk(2) as $chunk)
-        <div class="row" style="align-content:center">
-            @foreach ($chunk as $key => $value)
-                <div class="col-sm-12 col-md-6">
-                    <div class="row" style="align-items-center; margin:20px;">
-                        <h3 class="col">{{$value->projectName}}</h3>
-                    </div>
-                    <div class="row" style="align-items-center">
-                        <div class="col"><a href="{{$value->url}}"><img src="assets/img/{{$value->img}}"
-                                                                        style="width: 200%"></div>
-                    </div>
-                    <div class="row">
-                        <p class="col">{{$value->description}}</p>
-                        <p class="col">{{$value->keywords}}</p>
-                        <a href="{{$value->github}}"><img src="{{asset('/assets/img/githublogo.gif')}}"
-                                                            style="width: 50%"></a>
-                    </div>
+    <div class="row" style="align-content:center; margin:20px;">
+        @foreach ($chunk as $key => $value)
+            <div class="col-sm-12 col-md-6">
+                <div class="row" style="align-items-center">
+                    <h3 class="col">{{$value->projectName}}</h3>
                 </div>
-            @endforeach
-        </div>
-    @endforeach
+                <div class="row" style="align-items-center">
+                    <div class="col"><a href="{{$value->url}}"><img src="assets/img/{{$value->img}}"
+                        class='img-fluid'></div>
+                </div>
+                <div class="row">
+                    <p class="col">{{$value->description}}</p>
+                    <p class="col">{{$value->keywords}}</p>
+                    <a href="{{$value->github}}"><img src="{{asset('/assets/img/githublogo.gif')}}"
+                                                      style="width: 15%"></a>
+                </div>
+            </div>
+        @endforeach
+    </div>
+@endforeach
 </div>
 @endsection

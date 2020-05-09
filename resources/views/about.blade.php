@@ -25,8 +25,8 @@
                 </div>
             </div>
             <div class="row justify-content-center" style="margin-top:20px">
-                <div class="col-sm-3">
-                    <div class="card" style="width: 18rem;">
+                <div class="col-sm-6">
+                    <div class="card">
                         <img class="card-img-top" src="../assets/img/AQproducts.jpeg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Account Manager</h5>
@@ -42,8 +42,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3 offset-md-2">
-                    <div class="card" style="width: 18rem;">
+                <div class="col-sm-6">
+                    <div class="card">
                         <img class="card-img-top" src="../assets/img/laserWelding.jpeg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Engineering Consultant</h5>
@@ -63,8 +63,8 @@
             </div>
                     
             <div class="row justify-content-center" style="margin-top:20px">
-                <div class="col-sm-3">
-                    <div class="card" style="width: 18rem;">
+                <div class="col-sm-6">
+                    <div class="card">
                         <img class="card-img-top" src="../assets/img/vela.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Senio Electrical Engineer</h5>
@@ -85,8 +85,8 @@
                     </div>
                 </div>
 
-                <div class="col-sm-3 offset-md-2">
-                    <div class="card" style="width: 18rem;">
+                <div class="col-sm-6">
+                    <div class="card">
                         <img class="card-img-top" src="../assets/img/bentlyNevada.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Field Engineer/Test Engineer/Test Technician</h5>
@@ -169,7 +169,7 @@
             <div class="row text-center">
                 <div class="col">
                     <h3>Resume available upon request</h3>
-                    <embed src="../assets/img/Carlos Aragon Resume 2019.pdf">
+                    {{-- <embed src="../assets/img/Carlos Aragon Resume 2019.pdf"> --}}
                 </div>
             </div>
         </div>
