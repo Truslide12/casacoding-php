@@ -23,16 +23,16 @@
     <div class="container-fluid">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div>
-                <img src="assets/img/Carlos_Aragon.jpg" style="width:15%">
+                <img src="assets/img/CarlosAragonFormal.jpg" style="width:15%">
+                <div class="navbar-brand">CasaCoding</div>
             </div>
-            <div class="navbar-brand">CasaCoding</div>
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{ route('projects.index')}}">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="{{ route('projects.index')}}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('projects.webdev')}}">Web Development</a>
+                        <a class="nav-link" href="{{ route('projects.webdev')}}">Websites</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('projects.php')}}">PHP</a>
@@ -109,7 +109,6 @@
    <!-- Footer -->
    <div class="footer navbar-dark bg-dark text-center text-light">
         <h5>Carlos Aragon Coding Desing</h5>
-        <p>1943 Country Club Dr.</p>
         <p>Redlands, Ca</p>
         <p>(909)648-5778</p>
         <a href="mailto:carlos.s.aragon12@gmail.com">e-mail</a>

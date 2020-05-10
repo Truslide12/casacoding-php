@@ -1,11 +1,10 @@
-@extends('layouts.home')
+@extends('layouts.master')
 
 @section('content')
 		<!-- Main -->
 		<div class="main">
                 <div class="container">
                     <!-- Contact Info -->
-                    <br><br><br><br>
                     <p class="row"></p>
                     <address>
                         <span class="aboutH">GitHub:</span><br>
