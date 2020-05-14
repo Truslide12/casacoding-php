@@ -17,9 +17,7 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 })->name('about');
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
+Route::get('/updates','UpdatesController@updates.index')->name('updates');
 
 // Projects routes
 Route::get('/projects', 'ProjectsController@index')->name('projects.index');

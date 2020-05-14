@@ -4,7 +4,7 @@
         <!-- Main -->
 
 <div class="container">
-    <div class="row" style="align-items-center; margin:20px;">
+    <div class="row" style="align-items:center; margin:20px;">
         <h1 class="col text-center">NodeJS</h1>
     </div>
 
@@ -12,10 +12,10 @@
     <div class="row" style="align-content:center; margin:20px;">
         @foreach ($chunk as $key => $value)
             <div class="col-sm-12 col-md-6">
-                <div class="row" style="align-items-center">
+                <div class="row align-items-center">
                     <h3 class="col">{{$value->projectName}}</h3>
                 </div>
-                <div class="row" style="align-items-center">
+                <div class="row align-items-center">
                     <div class="col"><a href="{{$value->url}}"><img src="assets/img/{{$value->img}}"
                         class='img-fluid'></div>
                 </div>
@@ -28,6 +28,6 @@
             </div>
         @endforeach
     </div>
-@endforeach
+
 </div>
 @endsection
