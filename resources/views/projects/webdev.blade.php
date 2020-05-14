@@ -23,7 +23,7 @@
                         <div class="row">
                             <p class="col">{{$value->description}}</p>
                             <p class="col">{{$value->keywords}}</p>
-                            <a href="{{$value->github}}"><img src="../assets/img/githublogo.gif"
+                            <a href="{{$value->github}}"><img src="../assets/img/githubLogo.gif"
                                                               style="width: 15%"></a>
                         </div>
                     </div>
