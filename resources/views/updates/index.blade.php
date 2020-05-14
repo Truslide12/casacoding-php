@@ -25,16 +25,16 @@
                                         <p>{{$value->projectName}}</p>
                                     </td>
                                     <td>
-                                        <p>{{$value->currentStatus}}></p>
+                                        <p>{{$value->currentStatus}}</p>
                                     </td>
                                     <td>
-                                        <p>{{$value->upcomingUpdates}}></p>
+                                        <p>{{$value->upcomingUpdates}}</p>
                                     </td>
                                     <td>
-                                        <p>{{$value->lastUpdate}}></p>
+                                        <p>{{$value->lastUpdate}}</p>
                                     </td>
                                     <td>
-                                        <p>{{$value->expUpdate}}"></p>
+                                        <p>{{$value->expUpdate}}</p>
                                     </td>
                                 </tr>
                             @endforeach
