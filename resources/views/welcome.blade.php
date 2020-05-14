@@ -47,7 +47,7 @@
                         <a class="nav-link" href="{{ route('about')}}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('contact')}}">Contact</a>
+                        <a class="nav-link" href="{{ route('updates.index')}}">Updates</a>
                     </li>
                 </ul>
             </div>
@@ -113,10 +113,10 @@
         <p>(909)648-5778</p>
         <a href="mailto:carlos.s.aragon12@gmail.com">e-mail</a>
         <p></p>
-        <a href="https://github.com/Truslide12"><img class="footer-img" src="{{ asset('img/githubLogo.gif') }}"></a>
+        <a href="https://github.com/Truslide12"><img class="footer-img" style="width: 50px;" src="{{ asset('assets/img/githubLogo.gif') }}"></a>
         <p></p>
         <a href="https://www.linkedin.com/in/carlos-aragon-a2839512">
-          <img class="footer-img" src="{{ asset('img/linkedIn.png') }}"></a>
+          <img class="footer-img" style="width: 50px;" src="{{ asset('assets/img/linkedIn.png') }}"></a>
     </div>
 
     <!-- Bootstrap core JavaScript

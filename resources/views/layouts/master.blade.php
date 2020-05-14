@@ -29,7 +29,7 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{ route('welcome')}}">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{{ route('projects.index')}}">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('projects.webdev')}}">Websites</a>
@@ -47,7 +47,7 @@
                     <a class="nav-link" href="{{ route('about')}}">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('contact')}}">Contact</a>
+                    <a class="nav-link" href="{{ route('updates.index')}}">Updates</a>
                 </li>
             </ul>
         </div>
@@ -60,19 +60,18 @@
     </main>
 
     <!-- Footer -->
-    <div class="footer">
-        <div class="row">
-            <div class="col text-center">
-                <h5>Carlos Aragon Coding Design</h5>
-                <p>Redlands, Ca</p>
-                <p>(909)648-5778</p>
-                <a href="mailto:carlos.s.aragon12@gmail.com">e-mail</a>
-                <p></p>
-                <a href="https://github.com/Truslide12" style="width: 15%" ><img class="img-fluid" style="width: 50px;" src="{{asset('/assets/img/githublogo.gif')}}"></a>
-                <p></p>
-                <a href="https://www.linkedin.com/in/carlos-aragon-a2839512" style="width: 15%">
-                <img  class="img-fluid" style="width: 50px;" src="{{ asset('/assets/img/linkedin.png') }}"></a>
-            </div>
+   <!-- Footer -->
+   <div class="footer navbar-dark bg-dark text-center text-light">
+        <div class="col text-center">
+            <h5>Carlos Aragon Coding Desing</h5>
+            <p>Redlands, Ca</p>
+            <p>(909)648-5778</p>
+            <a href="mailto:carlos.s.aragon12@gmail.com">e-mail</a>
+            <p></p>
+            <a href="https://github.com/Truslide12"><img class="img-fluid" style="width: 50px;" src="../assets/img/githubLogo.gif"></a>
+            <p></p>
+            <a href="https://www.linkedin.com/in/carlos-aragon-a2839512">
+            <img class="img-fluid" style="width: 50px;" src="../assets/img/linkedIn.png"></a>
         </div>
     </div>
 

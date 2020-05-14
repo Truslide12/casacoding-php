@@ -13,21 +13,26 @@
         @foreach ($chunk as $key => $value)
             <div class="col-sm-12 col-md-6">
                 <div class="row align-items-center">
-                    <h3 class="col">{{$value->projectName}}</h3>
+                    <div class="col">
+                        <h3>{{$value->projectName}}</h3>
+                    </div>
                 </div>
                 <div class="row align-items-center">
-                    <div class="col"><a href="{{$value->url}}"><img src="assets/img/{{$value->img}}"
-                        class='img-fluid'></div>
+                    <div class="col">
+                        <a href="{{$value->url}}"><img src="assets/img/{{$value->img}}"
+                        class='img-fluid'>
+                    </div>
                 </div>
                 <div class="row">
-                    <p class="col">{{$value->description}}</p>
-                    <p class="col">{{$value->keywords}}</p>
-                    <a href="{{$value->github}}"><img src="{{asset('/assets/img/githublogo.gif')}}"
-                                                      style="width: 15%"></a>
+                    <div class="col">
+                        <p>{{$value->description}}</p>
+                        <p>{{$value->keywords}}</p>
+                        <a href="{{$value->github}}"><img src="{{asset('/assets/img/githublogo.gif')}}" style="width: 15%"></a>
+                    </div>
                 </div>
             </div>
         @endforeach
     </div>
-
+    @endforeach
 </div>
 @endsection
