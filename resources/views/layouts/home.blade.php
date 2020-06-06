@@ -28,7 +28,7 @@
                 <div class="navbar-brand">CasaCoding</div>
             </div>
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mr-auto pull-right">
                     <li class="nav-item active">
                         <a class="nav-link" href="{{ route('projects.index')}}">Home <span class="sr-only">(current)</span></a>
                     </li>
