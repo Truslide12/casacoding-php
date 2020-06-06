@@ -23,10 +23,12 @@
 <div class="container-fluid">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div>
-            <img src="assets/img/CarlosAragonFormal.jpg" style="width:15%">
-            <div class="navbar-brand">CasaCoding</div>
+            <div class="navbar-brand">
+                <img src="assets/img/CarlosAragonFormal.jpg" class="d-inline-block align-top" height="30" width="30">
+                CasaCoding
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="{{ route('projects.index')}}">Home <span class="sr-only">(current)</span></a>

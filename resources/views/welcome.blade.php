@@ -13,45 +13,51 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css"/>
+    {{-- <link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css"/> --}}
     
   </head>
 
   <body>
-
-    {{-- NavBar --}}
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div>
-                <img src="assets/img/CarlosAragonFormal.jpg" style="width:15%">
-                <div class="navbar-brand">CasaCoding</div>
+    <div class="header">
+        {{-- NavBar --}}
+        <div class="row navbar-dark bg-dark">
+            <div class="col">
+                <img src="assets/img/CarlosAragonFormal.jpg" style="width:15%" class="d-inline-block align-top">
             </div>
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{{ route('projects.index')}}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('projects.webdev')}}">Websites</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('projects.php')}}">PHP</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('projects.react')}}">React</a>
-                    <li class="nav-item">
-                            <a class="nav-link" href="{{ route('projects.nodejs')}}">NodeJS</a>
-                    </li>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('about')}}">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('updates.index')}}">Updates</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        </div>
+        <div class="row justify-content-end">
+            <nav class="col navbar navbar-expand-md navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">CasaCoding</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleBtn" aria-controls="navbarTogglerBtn" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggleBtn">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ route('projects.index')}}">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('projects.webdev')}}">Websites</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('projects.php')}}">PHP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('projects.react')}}">React</a>
+                        <li class="nav-item">
+                                <a class="nav-link" href="{{ route('projects.nodejs')}}">NodeJS</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('about')}}">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('updates.index')}}">Updates</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </div>
 
     <!-- Main -->
