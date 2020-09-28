@@ -81,10 +81,10 @@
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Blog-LaraVue</h5>
                             <p>PHP laravel Vue blog using MySQL</p>
-                            <a href="#" class="showcase-title">Blog-LaraVue</a>
+                            <a href="https://blog-laraveu.herokuapp.com/" class="showcase-title">Blog-LaraVue</a>
                         </div>
                     </div>
-                    <div class="carousel-item active">
+                    <div class="carousel-item">
                         <img class="d-block w-100" src='/assets/img/MyRolodex.png' alt="MyRolodex">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>MyRolodex</h5>
