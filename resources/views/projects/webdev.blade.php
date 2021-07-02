@@ -17,14 +17,13 @@
                             <h3 class="col">{{$value->projectName}}</h3>
                         </div>
                         <div class="row" style="align-items-center">
-                            <div class="col"><a href="{{$value->url}}"><img src="assets/img/{{$value->img}}"
+                            <div class="col"><a href="{{$value->url}}"><img style="width: 100%" src="assets/img/{{$value->img}}"
                                 class='img-fluid'></div>
                         </div>
                         <div class="row">
                             <p class="col">{{$value->description}}</p>
                             <p class="col">{{$value->keywords}}</p>
-                            <a href="{{$value->github}}"><img src="../assets/img/githubLogo.gif"
-                                                              style="width: 15%"></a>
+                            <a href="{{$value->github}}"><img style="width:25%" src="../assets/img/githubLogo.gif"></a>
                         </div>
                     </div>
                 @endforeach

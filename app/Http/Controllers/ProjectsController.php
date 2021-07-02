@@ -14,7 +14,7 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-        $projects = Projects::orderBy('ranking')->paginate(10);
+        $projects = Projects::orderBy('ranking' , 'desc')->paginate(10);
         return view('projects.index', ['projects' => $projects]);
     }
 
@@ -88,8 +88,8 @@ class ProjectsController extends Controller
     public function edit($id)
     {
         $Project = Project::find($id);
-        if($Project) {            
-            return view('Projects.edit')->with('Project',$Project);   
+        if($Project) {
+            return view('Projects.edit')->with('Project',$Project);
         } else {
             return redirect('Projects');
         }
@@ -127,8 +127,8 @@ class ProjectsController extends Controller
     public function destroy($id)
     {
         Project::find($id)->delete();
-        return redirect()->route('Projects.index')->with('success','Project deleted success');   
-    
+        return redirect()->route('Projects.index')->with('success','Project deleted success');
+
     }
 
         /**
@@ -140,10 +140,16 @@ class ProjectsController extends Controller
     public function search($query)
     {
         // Project::find($id)->delete();
-        // return redirect()->route('Projects.index')->with('success','Project deleted success');   
-    
+        // return redirect()->route('Projects.index')->with('success','Project deleted success');
+
     }
 
+    public function getCategoryPage($cat){
+        $projects = Projects::where( 'projectType' , 'like' , '%'+$cat+'%' )->get();
+        // dump($projects);
+        $view = concat('projects.'+$cat);
+        return view($view, ['projects' => $projects]);
+    }
             /**
      * Show webdevelopment projects from storage.
      *
@@ -179,6 +185,12 @@ class ProjectsController extends Controller
     public function react()
     {
         $projects = Projects::where('keywords','like','%react%')->get();
+        return view('projects.react', ['projects' => $projects]);
+    }
+
+    public function vuejs()
+    {
+        $projects = Projects::where('keywords','like','%vue%')->get();
         return view('projects.react', ['projects' => $projects]);
     }
 

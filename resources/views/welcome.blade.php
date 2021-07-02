@@ -27,7 +27,7 @@
         </div>
         <div class="row justify-content-end">
             <nav class="col navbar navbar-expand-md navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">CasaCoding</a>
+                <a class="navbar-brand" href="projects.index">CasaCoding</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleBtn" aria-controls="navbarTogglerBtn" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -44,9 +44,12 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('projects.react')}}">React</a>
-                        <li class="nav-item">
-                                <a class="nav-link" href="{{ route('projects.nodejs')}}">NodeJS</a>
                         </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="{{ route('projects.vuejs')}}">VueJS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('projects.nodejs')}}">NodeJS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('about')}}">About</a>
@@ -93,21 +96,29 @@
                         </div>
                     </div>
                     <div class="carousel-item">
+                        <img class="d-block w-100" src='/assets/img/VueMyRolodex.png' alt="MyRolodex">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>VueMyRolodex</h5>
+                            <p>PHP and VueJS addressbook using MySQL</p>
+                            <a href="https://vuemyrolodex.herokuapp.com" class="showcase-title">VueMyRolodex</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
                         <img class="d-block w-100" src='/assets/img/rumrunnerfrontpage.png' alt="RumRunner">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>RumRunner</h5>
                             <p>Phase3 game using React and MySQL</p>
-                            <a href="https://github.com/Truslide12/myrolodex" class="showcase-title">RumRunner</a>
+                            <a href="https://piratetreasurehunter.herokuapp.com" class="showcase-title">RumRunner</a>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    {{-- <div class="carousel-item">
                         <img class="d-block w-100" src='/assets/img/Screen Shot 2019-08-23 at 10.43.12 AM.png' alt="Bamazon">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Bamazon</h5>
                             <p>NodeJS project using MySQL</p>
                             <a href="https://github.com/Truslide12/myrolodex" class="showcase-title">Bamazon</a>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
                 <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
